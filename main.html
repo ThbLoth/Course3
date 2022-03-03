@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>THE TL Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <img src="logo.png" alt="Logo TL" class="top_Logo" width="12%">
+
+        <table class="menu_Title">
+            <tr>
+                <td class="menu_TD"><h1>MENU</h1></td>
+            </tr>
+        </table>
+
+        <table class="menu_body">
+            <tr>
+                <td class="td1">
+                    <table class="left1" id="tableTL">
+                    </table>
+                </td>
+                <td class="td2">
+                    <table class="right1" id="tableTR">
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1">
+                    <table class="left1" id="tableBL">
+                    </table>
+                </td>
+                <td class="td2">
+                    <table class="right1" id="tableBR">
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <img src="logo.png" alt="Logo TL" class="bot_Logo" width="12%">
+
+        <form id="form1" name="form1">
+            <label for="option">Choose the position to modify : </label>
+            <select name="option" id="option">
+                <option value="1">Top-left</option>
+                <option value="2">Top-right</option>
+                <option value="3">Bottom-left</option>
+                <option value="4">Bottom-right</option>
+            </select>
+            
+            <br>
+            <label for="titleInput">Enter the title</label>
+            <input type="text" placeholder="Title" name="titleInput">
+
+            <br>
+            <label for="titleInput">Enter the dish</label>
+            <input type="text" placeholder="Dish name" name="dishInput">
+
+            <br>
+            <label for="titleInput">Enter the dish price</label>
+            <input type="text" placeholder="Dish price" name="priceInput">
+
+            <br>
+            <input type="button" value="Submit the data" onclick="fillMenu()">
+            
+        </form>
+
+    </body>
+
+    <script src="script.js"></script>
+
+
+</html>
